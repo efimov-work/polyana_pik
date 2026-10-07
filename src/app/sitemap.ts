@@ -10,7 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: BUILT_AT,
       changeFrequency: 'monthly',
       priority: 1,
-      images: [`${siteUrl()}/assets/hero.webp`, `${siteUrl()}/opengraph-image.jpg`]
+      images: [`${siteUrl()}/assets/hero.webp`, `${siteUrl()}/opengraph-image.jpg`, `${siteUrl()}/logo.png`]
     }
   ];
 }

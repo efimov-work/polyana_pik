@@ -66,7 +66,8 @@ export function buildJsonLd(): Record<string, unknown> {
         name: COMPLEX.name,
         description: DESCRIPTION,
         url,
-        image: [`${url}/assets/hero.webp`, `${url}/opengraph-image.jpg`],
+        logo: { '@type': 'ImageObject', '@id': `${url}/#logo`, url: `${url}/logo.png`, contentUrl: `${url}/logo.png`, width: 1000, height: 1000, caption: SITE_NAME },
+        image: [`${url}/assets/hero.webp`, `${url}/opengraph-image.jpg`, { '@id': `${url}/#logo` }],
         address: {
           '@type': 'PostalAddress',
           addressCountry: COMPLEX.country,
