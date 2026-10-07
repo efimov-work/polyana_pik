@@ -1,0 +1,24 @@
+services:
+  web:
+    build:
+      context: .
+      args:
+        NEXT_PUBLIC_SITE_URL: ${NEXT_PUBLIC_SITE_URL:-}
+        YANDEX_VERIFICATION: ${YANDEX_VERIFICATION:-}
+        GOOGLE_SITE_VERIFICATION: ${GOOGLE_SITE_VERIFICATION:-}
+    image: polyana-pik:latest
+    ports:
+      - "${WEB_PORT:-3000}:3000"
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN:-}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID:-}
+      TELEGRAM_THREAD_ID: ${TELEGRAM_THREAD_ID:-}
+      TRUST_PROXY: ${TRUST_PROXY:-}
+      LEADS_DATA_DIR: /app/.data
+    volumes:
+      - leads-data:/app/.data
+    restart: unless-stopped
+    mem_limit: 512m
+
+volumes:
+  leads-data:
