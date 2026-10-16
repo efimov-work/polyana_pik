@@ -1,0 +1,8 @@
+:HL["/polyana_pik/_next/static/chunks/2gv3wohtr4gb7.css","style"]
+:HL["/polyana_pik/_next/static/media/35a317e37c2135a2-s.p.0vsfw373o_bl3.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/polyana_pik/_next/static/media/87cff802105bedba-s.p.317r36kz8jp6a.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/polyana_pik/_next/static/media/a343f882a40d2cc9-s.p.1sj6eobyi31rd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/polyana_pik/_next/static/media/d3fe2f289711ac3f-s.p.1l2zhvq5eocqf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/polyana_pik/assets/hero.webp","image",{"imageSrcSet":"/polyana_pik/assets/hero-1200.webp 1200w, /polyana_pik/assets/hero.webp 2400w","imageSizes":"100vw","fetchPriority":"high"}]
+:HL["/polyana_pik/logo.svg","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}},"staleTime":300,"buildId":"H_sMgbEFDVtoIHqixo32e"}
