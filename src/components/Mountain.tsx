@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { COMPLEX } from '@/lib/content';
 
 const RIDGE =
@@ -35,7 +36,7 @@ export default function Mountain() {
         }}
       >
         <img
-          src="/logo.svg"
+          src={asset('/logo.svg')}
           alt=""
           width={121}
           height={73}

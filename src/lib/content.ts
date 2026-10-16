@@ -1,3 +1,5 @@
+import { asset } from './asset';
+
 export const CONTACTS = {
   phone: '+7 (900) 000-00-00',
   phoneHref: 'tel:+79000000000',
@@ -35,21 +37,21 @@ export const FORMATS = [
     title: 'Апартаменты',
     note: 'от 43 м²',
     text: '1, 2 или 3 спальни, кухня-гостиная и терраса на Мзымту.',
-    img: '/assets/format-apartments.webp',
+    img: asset('/assets/format-apartments.webp'),
     alt: 'Спальня в апартаментах комплекса «Поляна Пик»'
   },
   {
     title: 'Пентхаусы',
     note: 'от 72 м², сауна',
     text: 'Два уровня, высокие потолки, панорамная терраса.',
-    img: '/assets/format-penthouse.webp',
+    img: asset('/assets/format-penthouse.webp'),
     alt: 'Двухуровневая гостиная пентхауса с камином'
   },
   {
     title: 'Шале',
     note: '7 шале от 176 м²',
     text: 'Отдельный дом на территории комплекса. Интерьер делается под владельца.',
-    img: '/assets/format-chalet.webp',
+    img: asset('/assets/format-chalet.webp'),
     alt: 'Вид на заснеженные вершины Красной Поляны'
   }
 ];
@@ -84,12 +86,12 @@ export const LAYOUTS: { area: string; tag: string; group: LayoutGroup; title: st
 ];
 
 export const GALLERY = [
-  { img: '/assets/gallery-1.webp', alt: 'Гостиная с панорамным окном' },
-  { img: '/assets/gallery-2.webp', alt: 'Спальня с окнами в пол' },
-  { img: '/assets/gallery-3.webp', alt: 'Кабинет с библиотекой' },
-  { img: '/assets/gallery-4.webp', alt: 'Кухня-гостиная с обеденным столом' },
-  { img: '/assets/gallery-5.webp', alt: 'Ванная комната в светлом мраморе' },
-  { img: '/assets/gallery-6.webp', alt: 'Кухня-гостиная с диваном и обеденной зоной' }
+  { img: asset('/assets/gallery-1.webp'), alt: 'Гостиная с панорамным окном' },
+  { img: asset('/assets/gallery-2.webp'), alt: 'Спальня с окнами в пол' },
+  { img: asset('/assets/gallery-3.webp'), alt: 'Кабинет с библиотекой' },
+  { img: asset('/assets/gallery-4.webp'), alt: 'Кухня-гостиная с обеденным столом' },
+  { img: asset('/assets/gallery-5.webp'), alt: 'Ванная комната в светлом мраморе' },
+  { img: asset('/assets/gallery-6.webp'), alt: 'Кухня-гостиная с диваном и обеденной зоной' }
 ];
 
 export const SERVICES = [

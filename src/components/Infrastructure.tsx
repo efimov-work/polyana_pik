@@ -1,9 +1,10 @@
+import { asset } from '@/lib/asset';
 import { SERVICES } from '@/lib/content';
 
 export default function Infrastructure() {
   return (
     <section data-section="infrastructure" data-clip="0" style={{ position: 'relative', background: '#1b2420', overflow: 'hidden' }}>
-      <img className="cover" src="/assets/infrastructure.webp" alt="Бассейн с панорамными окнами и видом на горы" loading="lazy" decoding="async" />
+      <img className="cover" src={asset('/assets/infrastructure.webp')} alt="Бассейн с панорамными окнами и видом на горы" loading="lazy" decoding="async" />
       <div style={{ position: 'absolute', inset: 0, background: 'rgba(14,19,17,.84)' }}></div>
       <div
         style={{

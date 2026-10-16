@@ -1,6 +1,7 @@
 'use client';
 
 import { useCallback, useState } from 'react';
+import { asset } from './asset';
 import { isPhone } from './contact';
 import { CONTACTS } from './content';
 
@@ -32,7 +33,7 @@ export function useLead() {
       setError('');
       setStatus('sending');
       try {
-        const res = await fetch('/api/lead', {
+        const res = await fetch(asset('/api/lead'), {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(fields)

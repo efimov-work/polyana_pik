@@ -1,4 +1,5 @@
 import type { CSSProperties } from 'react';
+import { asset } from '@/lib/asset';
 import { CONTACTS } from '@/lib/content';
 import HeroForm from './HeroForm';
 
@@ -22,8 +23,8 @@ export default function Hero() {
       <div className="kb" data-kb="1" style={{ position: 'absolute', inset: 0, background: '#1b2420', transformOrigin: '60% 40%' }}>
         <img
           className="cover"
-          src="/assets/hero.webp"
-          srcSet="/assets/hero-1200.webp 1200w, /assets/hero.webp 2400w"
+          src={asset('/assets/hero.webp')}
+          srcSet={`${asset('/assets/hero-1200.webp')} 1200w, ${asset('/assets/hero.webp')} 2400w`}
           sizes="100vw"
           alt="Комплекс апартаментов «Поляна Пик» на фоне гор Красной Поляны"
           fetchPriority="high"
@@ -50,7 +51,7 @@ export default function Hero() {
           padding: 'clamp(18px,2.5vw,28px) clamp(20px,4.5vw,64px)'
         }}
       >
-        <img src="/logo.svg" alt="Поляна Пик" width={121} height={73} style={{ height: 'clamp(30px,4vw,52px)', width: 'auto', display: 'block' }} />
+        <img src={asset('/logo.svg')} alt="Поляна Пик" width={121} height={73} style={{ height: 'clamp(30px,4vw,52px)', width: 'auto', display: 'block' }} />
         <a className="phone-link" href={CONTACTS.phoneHref} style={{ fontSize: 'clamp(14px,1.2vw,16px)', fontWeight: 700, whiteSpace: 'nowrap' }}>
           {CONTACTS.phone}
         </a>

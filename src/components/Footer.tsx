@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { COMPLEX, CONTACTS } from '@/lib/content';
 
 export default function Footer() {
@@ -17,7 +18,7 @@ export default function Footer() {
         }}
       >
         <div>
-          <img src="/logo.svg" alt="Поляна Пик" width={121} height={73} loading="lazy" decoding="async" style={{ height: 40, width: 'auto', display: 'block' }} />
+          <img src={asset('/logo.svg')} alt="Поляна Пик" width={121} height={73} loading="lazy" decoding="async" style={{ height: 40, width: 'auto', display: 'block' }} />
           <div style={{ marginTop: 12 }}>
             <a className="phone-link" href={CONTACTS.phoneHref}>
               {CONTACTS.phone}

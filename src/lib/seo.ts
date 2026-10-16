@@ -1,3 +1,4 @@
+import { BASE_PATH } from './asset';
 import { COMPLEX, SERVICES } from './content';
 
 export const DEFAULT_SITE_URL = 'http://localhost:3000';
@@ -6,6 +7,8 @@ export const SITE_NAME = 'Поляна Пик';
 
 export const YANDEX_VERIFICATION = process.env.YANDEX_VERIFICATION || undefined;
 export const GOOGLE_VERIFICATION = process.env.GOOGLE_SITE_VERIFICATION || undefined;
+
+export const NOINDEX = process.env.SITE_NOINDEX === '1';
 
 export const TITLE = 'Поляна Пик: апартаменты в Красной Поляне под управлением Hilton';
 export const DESCRIPTION =
@@ -23,7 +26,7 @@ export const KEYWORDS = [
   SITE_NAME
 ];
 
-export function siteUrl(): string {
+export function siteOrigin(): string {
   const raw = (process.env.NEXT_PUBLIC_SITE_URL || '').trim();
   if (!raw) return DEFAULT_SITE_URL;
   try {
@@ -31,6 +34,10 @@ export function siteUrl(): string {
   } catch {
     return DEFAULT_SITE_URL;
   }
+}
+
+export function siteUrl(): string {
+  return `${siteOrigin()}${BASE_PATH}`;
 }
 
 export function buildJsonLd(): Record<string, unknown> {

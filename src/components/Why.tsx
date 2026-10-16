@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { REASONS } from '@/lib/content';
 import Photo from './Photo';
 
@@ -32,13 +33,13 @@ export default function Why() {
       </div>
       <div style={{ position: 'relative', width: '100%', aspectRatio: '4/5', maxHeight: 820, minHeight: 420 }}>
         <Photo
-          src="/assets/why-main.webp"
+          src={asset('/assets/why-main.webp')}
           alt="Корпуса комплекса «Поляна Пик» и въездная группа"
           parallax={-0.06}
           style={{ position: 'absolute', right: 0, top: 0, width: '80%', height: '78%', borderRadius: 24 }}
         />
         <Photo
-          src="/assets/why-terrace.webp"
+          src={asset('/assets/why-terrace.webp')}
           alt="Фасад корпуса с террасами среди сосен"
           parallax={0.08}
           style={{ position: 'absolute', left: 0, bottom: 0, width: '52%', height: '48%', borderRadius: 24, border: '8px solid #0E1311' }}

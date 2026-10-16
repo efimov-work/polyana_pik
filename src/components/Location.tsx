@@ -1,3 +1,4 @@
+import { asset } from '@/lib/asset';
 import { COMPLEX, DISTANCES } from '@/lib/content';
 import Photo from './Photo';
 
@@ -15,7 +16,7 @@ export default function Location() {
       }}
     >
       <Photo
-        src="/assets/map.webp"
+        src={asset('/assets/map.webp')}
         alt="Генплан комплекса «Поляна Пик» с высоты"
         clip={24}
         style={{ minHeight: 'clamp(320px,40vw,600px)', borderRadius: 24 }}
