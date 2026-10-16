@@ -5,7 +5,7 @@ cd "$(dirname "$0")/.."
 
 REMOTE="$(git remote get-url origin)"
 SLUG="$(printf '%s' "$REMOTE" | sed -E 's#^.*github\.com[:/]+##; s#^[0-9]+/##; s#\.git$##')"
-OWNER="${SLUG%%/*}"
+OWNER="${PAGES_OWNER:-${SLUG%%/*}}"
 REPO="${SLUG##*/}"
 BASE="/$REPO"
 ORIGIN="https://$(printf '%s' "$OWNER" | tr '[:upper:]' '[:lower:]').github.io"

@@ -2,6 +2,8 @@ import type { MetadataRoute } from 'next';
 import { asset } from '@/lib/asset';
 import { DESCRIPTION, SITE_NAME } from '@/lib/seo';
 
+export const dynamic = 'force-static';
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'Поляна Пик: апартаменты в Красной Поляне',
