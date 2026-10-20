@@ -38,6 +38,7 @@ export default function Formats() {
             <div style={{ fontSize: 14, fontWeight: 600 }}>{COMMERCE.note}</div>
             <h3 style={{ margin: '8px 0 0', fontFamily: 'var(--fd)', fontWeight: 400, fontSize: 44, lineHeight: 1 }}>{COMMERCE.title}</h3>
             <div style={{ marginTop: 12, fontSize: 16, lineHeight: 1.5 }}>{COMMERCE.text}</div>
+            <div style={{ marginTop: 16, fontSize: 20, fontWeight: 700 }}>{COMMERCE.rent}</div>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: 10, fontSize: 16, fontWeight: 600 }}>
             {COMMERCE.lots.map((lot, i) => (

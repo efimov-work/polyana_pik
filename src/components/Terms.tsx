@@ -21,7 +21,7 @@ export default function Terms() {
       <div style={{ textAlign: 'center', maxWidth: 980, margin: '0 auto 56px' }}>
         <div style={{ fontSize: 15, fontWeight: 600, color: '#E39A62', marginBottom: 24 }}>Условия покупки</div>
         <h2 style={{ margin: 0, fontFamily: 'var(--fd)', fontWeight: 400, fontSize: 'clamp(38px,5.4vw,76px)', lineHeight: 1.05 }}>
-          Рассрочка 0% <em style={{ color: '#F0B07E' }}>до ввода</em>
+          Рассрочка 0% <em style={{ color: '#F0B07E' }}>на 3 года</em>
         </h2>
       </div>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(min(100%,300px),1fr))', gap: 20 }}>
@@ -29,7 +29,7 @@ export default function Terms() {
           <div style={figure}>0%</div>
           <div>
             <h3 style={title}>Рассрочка от застройщика</h3>
-            <div style={text}>Платите частями, пока идёт стройка. Цена в договоре не меняется.</div>
+            <div style={text}>Первоначальный взнос 15%, остаток частями до 3 лет. Цена в договоре не меняется.</div>
           </div>
         </div>
         <div style={dark}>

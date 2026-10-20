@@ -87,7 +87,7 @@ export default function Hero() {
             }}
           >
             <span className="pulse" style={{ width: 8, height: 8, borderRadius: '50%', background: '#E39A62', flexShrink: 0 }}></span>
-            Старт продаж, рассрочка 0% до сдачи
+            Рассрочка 0% до 3 лет, взнос 15%
           </div>
           <h1
             className="hero-in"
