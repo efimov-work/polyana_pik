@@ -1,4 +1,5 @@
 import Agent from '@/components/Agent';
+import ChatWidget from '@/components/ChatWidget';
 import Facts from '@/components/Facts';
 import Footer from '@/components/Footer';
 import Formats from '@/components/Formats';
@@ -30,6 +31,7 @@ export default function Page() {
       </main>
       <Footer />
       <Motion />
+      <ChatWidget />
     </div>
   );
 }
