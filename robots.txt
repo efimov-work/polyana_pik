@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /
+
+Host: https://efimov-work.github.io/polyana_pik
+Sitemap: https://efimov-work.github.io/polyana_pik/sitemap.xml
